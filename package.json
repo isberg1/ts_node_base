@@ -1,0 +1,25 @@
+{
+  "name": "ts_node_base_repo",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "scripts": {
+    "startWatch": "ts-node-dev --respawn ./src/index.ts",
+    "compileAndStartOnce": "tsc && node .",
+    "tsNode": "ts-node ./src/index.ts",
+    "test": "jest",
+    "typeScriptCompile": "tsc"
+  },
+  "author": "Alexander Jakobsen (Isberg1)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "ts-node": "^9.1.1"
+  }
+}
